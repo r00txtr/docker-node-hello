@@ -12,7 +12,7 @@ ENV AP /data/app
 ENV SCPATH /etc/supervisor/conf.d
 
 # The daemons
-RUN apt-get update && apt-get install software-properties-common supervisor -y
+RUN apt-get update && apt-get install software-properties-common supervisor net-tools -y
 RUN mkdir -p /var/log/supervisor
 
 # Supervisor Configuration
